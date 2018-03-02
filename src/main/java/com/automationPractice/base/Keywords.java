@@ -17,8 +17,8 @@ WebDriverWait wait=new WebDriverWait(driver, 10);
 		// TODO Auto-generated constructor stub
 	}
 
-	public void verifyPage(String expected, String actual) {
-		Assert.assertEquals(expected, actual);
+	public void verifyPage(String expected, boolean actual) {
+		Assert.assertTrue(expected, actual);
 
 	}
 

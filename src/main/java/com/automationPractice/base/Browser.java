@@ -1,13 +1,12 @@
 package com.automationPractice.base;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Browser extends TestBase {
 public Browser() throws Exception {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 
 public void intialization(){

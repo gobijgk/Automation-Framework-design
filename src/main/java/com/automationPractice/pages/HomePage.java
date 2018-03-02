@@ -34,7 +34,7 @@ public static final String d=prop.getProperty("url");
 		log.info("verify the Home page");
 		By h=parser.getbjectLocator("verifyPage");
 		
-		getKey().verifyPage(prop.getProperty("verify"), getKey().findElement(h).getText());
+		getKey().verifyPage("wdw",getKey().findElement(h).getText().equals("sss"));
 	}
 
 }

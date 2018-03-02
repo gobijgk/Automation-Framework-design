@@ -6,7 +6,8 @@
            </listeners>
 	<test name="Regression suite 1">
 		<classes>
-			<class name="com.PV.Test.HomepageTest" />
+		<class name="com.automationPractice.Test.ddTest" />
+		<class name="com.automationPractice.Test.HomepageTest" />
 			
 		</classes>
 	</test>
