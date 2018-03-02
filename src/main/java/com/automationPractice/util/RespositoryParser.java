@@ -3,42 +3,39 @@ package com.automationPractice.util;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
- 
+
 import org.openqa.selenium.By;
- 
+
 public class RespositoryParser {
- 
+
 	private FileInputStream stream;
 	private String RepositoryFile;
 	public static Properties propertyFile = new Properties();
- 
-	public RespositoryParser(String fileName) throws IOException
-	{
+
+	public RespositoryParser(String fileName) throws IOException {
 		this.RepositoryFile = fileName;
 		stream = new FileInputStream(RepositoryFile);
 		propertyFile.load(stream);
 	}
-	public static final String getbjectLocator1(String locatorName)
-	{
+
+	public static final String getbjectLocator1(String locatorName) {
 		String locatorProperty = propertyFile.getProperty(locatorName);
 		System.out.println(locatorProperty.toString());
-//		String locatorType = locatorProperty.split(":")[0];
-//		int localType=Integer.parseInt(locatorType);
+		// String locatorType = locatorProperty.split(":")[0];
+		// int localType=Integer.parseInt(locatorType);
 		String locatorValue = locatorProperty.split(":")[1];
 		return locatorValue;
-		}
- 
-	public By getbjectLocator(String locatorName)
-	{
+	}
+
+	public By getbjectLocator(String locatorName) {
 		String locatorProperty = propertyFile.getProperty(locatorName);
 		System.out.println(locatorProperty.toString());
 		String locatorType = locatorProperty.split(":")[0];
-//		int localType=Integer.parseInt(locatorType);
+		// int localType=Integer.parseInt(locatorType);
 		String locatorValue = locatorProperty.split(":")[1];
- 
+
 		By locator = null;
-		switch(locatorType)
-		{
+		switch (locatorType) {
 		case "Id":
 			locator = By.id(locatorValue);
 			break;

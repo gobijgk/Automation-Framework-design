@@ -14,27 +14,27 @@ import com.automationPractice.util.RespositoryParser;
 
 public class HomePage extends TestBase {
 	private RespositoryParser parser;
-	
-	
-	
-	//some changes
-	
+
+	// some changes
+
 	private static Logger log = Logger.getLogger(HomePage.class.getName());
-	WebDriverWait wait=new WebDriverWait(driver, 20);
-	 
-public static final String d=prop.getProperty("url");
-	
+	WebDriverWait wait = new WebDriverWait(driver, 20);
+
+	public static final String d = prop.getProperty("url");
+
 	public HomePage() throws Exception {
 		super();
 		// TODO Auto-generated constructor stub
-		parser=new RespositoryParser(System.getProperty("user.dir")+"\\src\\main\\resources\\config\\object.properties");
-		
+		parser = new RespositoryParser(
+				System.getProperty("user.dir") + "\\src\\main\\resources\\config\\object.properties");
+
 	}
-	public void homePage() throws InterruptedException{
+
+	public void homePage() throws InterruptedException {
 		log.info("verify the Home page");
-		By h=parser.getbjectLocator("verifyPage");
-		
-		getKey().verifyPage("wdw",getKey().findElement(h).getText().equals("sss"));
+		By verify = parser.getbjectLocator("verifyPage");
+
+		getKey().verifyPage("Sign in", getKey().findElement(verify).getText());
 	}
 
 }

@@ -23,33 +23,28 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class HomepageTest extends TestBase{
+public class HomepageTest extends TestBase {
 	private static Logger log = Logger.getLogger(HomepageTest.class.getName());
-	
-public HomepageTest() throws Exception {
-		super();
-		// TODO Auto-generated constructor stub
-//		extent = new ExtentReports(File.separator
-//				+ "Extent.html", true);
 
-		
+	public HomepageTest() throws Exception {
+		super();
 	}
-//@BeforeMethod
-public void openUrl(){
-	
-	log.info("Open Automation website");
-//	getBrowser().intialization();	
-}
-@Test
-public void TC001_openHomePage() throws Exception{
-//	test=extent.startTest("TC001_openHomePage");
-	log.info("Open Automation website");
-	getBrowser().intialization();
-//	gethomePage().homePage();
-//	getScreenShoot().captureScreen(driver, "test");
-}
-@AfterMethod
-public void tearDown(ITestResult result) throws Exception{
-driver.close();	
-}
+
+	@BeforeMethod
+	public void openUrl() {
+
+		log.info("Open Automation website");
+		getBrowser().intialization();
+	}
+
+	@Test
+	public void TC001_openHomePage() throws Exception {
+		gethomePage().homePage();
+		getScreenShoot().captureScreen(driver, "Home Page");
+	}
+
+	@AfterMethod
+	public void tearDown(ITestResult result) throws Exception {
+		driver.close();
+	}
 }

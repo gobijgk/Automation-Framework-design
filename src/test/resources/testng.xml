@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Automation Regression suite" verbose="1">
-	
-  <listeners>
-        <listener class-name="com.automationPractice.util.TestListener"/>
-           </listeners>
+
+	<listeners>
+		<listener class-name="com.automationPractice.util.TestListener" />
+	</listeners>
 	<test name="Regression suite 1">
 		<classes>
-		<class name="com.automationPractice.Test.ddTest" />
-		<class name="com.automationPractice.Test.HomepageTest" />
-			
+
+			<class name="com.automationPractice.Test.HomepageTest" />
+
 		</classes>
 	</test>
 </suite>

@@ -11,14 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import junit.framework.Assert;
 
 public class Keywords extends TestBase {
-WebDriverWait wait=new WebDriverWait(driver, 10);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
+
 	public Keywords() throws Exception {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public void verifyPage(String expected, boolean actual) {
-		Assert.assertTrue(expected, actual);
+	public void verifyPage(String expected, String string) {
+		Assert.assertEquals(expected, string);
 
 	}
 
