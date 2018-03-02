@@ -1,4 +1,4 @@
-package com.PV.pages;
+package com.automationPractice.pages;
 
 import java.util.logging.Logger;
 
@@ -9,8 +9,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.PV.base.TestBase;
-import com.PV.util.RespositoryParser;
+import com.automationPractice.base.TestBase;
+import com.automationPractice.util.RespositoryParser;
 
 public class HomePage extends TestBase {
 	private RespositoryParser parser;

@@ -1,4 +1,4 @@
-package com.PV.util;
+package com.automationPractice.util;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

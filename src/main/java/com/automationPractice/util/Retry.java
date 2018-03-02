@@ -1,6 +1,6 @@
-package com.PV.util;
+package com.automationPractice.util;
 
-import com.PV.base.TestBase;
+import com.automationPractice.base.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

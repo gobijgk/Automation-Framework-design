@@ -1,4 +1,4 @@
-package com.PV.base;
+package com.automationPractice.base;
 
 import java.util.List;
 

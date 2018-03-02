@@ -1,4 +1,4 @@
-package com.PV.base;
+package com.automationPractice.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

@@ -2,7 +2,7 @@
 <suite name="Automation Regression suite" verbose="1">
 	
   <listeners>
-        <listener class-name="com.PV.util.TestListener"/>
+        <listener class-name="com.automationPractice.util.TestListener"/>
            </listeners>
 	<test name="Regression suite 1">
 		<classes>

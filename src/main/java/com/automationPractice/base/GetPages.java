@@ -1,7 +1,7 @@
-package com.PV.base;
+package com.automationPractice.base;
 
-import com.PV.pages.HomePage;
-import com.PV.util.CaptureScreenShot;
+import com.automationPractice.pages.HomePage;
+import com.automationPractice.util.CaptureScreenShot;
 
 public class GetPages {
 //	common classes

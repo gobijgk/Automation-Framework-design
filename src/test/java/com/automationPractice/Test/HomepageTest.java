@@ -1,4 +1,4 @@
-package com.PV.Test;
+package com.automationPractice.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,8 +16,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.PV.base.TestBase;
-import com.PV.util.CaptureScreenShot;
+import com.automationPractice.base.TestBase;
+import com.automationPractice.util.CaptureScreenShot;
 import com.relevantcodes.extentreports.ExtentReports;
 //import com.utility.CaptureScreenShot;
 import com.relevantcodes.extentreports.ExtentTest;

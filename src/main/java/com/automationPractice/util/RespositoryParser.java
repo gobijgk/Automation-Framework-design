@@ -1,4 +1,4 @@
-package com.PV.util;
+package com.automationPractice.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;

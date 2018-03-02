@@ -1,4 +1,4 @@
-package com.PV.util;
+package com.automationPractice.util;
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 
-import com.PV.base.TestBase;
+import com.automationPractice.base.TestBase;
  
 public class CaptureScreenShot extends TestBase {
 	

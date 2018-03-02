@@ -1,4 +1,4 @@
-package com.PV.util;
+package com.automationPractice.util;
 
 import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
