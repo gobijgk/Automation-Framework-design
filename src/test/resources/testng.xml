@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation Regression suite" verbose="1">
+	
+  <listeners>
+        <listener class-name="com.PV.util.TestListener"/>
+           </listeners>
+	<test name="Regression suite 1">
+		<classes>
+			<class name="com.PV.Test.HomepageTest" />
+			
+		</classes>
+	</test>
+</suite>
