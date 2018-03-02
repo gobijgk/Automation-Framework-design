@@ -38,14 +38,14 @@ public HomepageTest() throws Exception {
 public void openUrl(){
 	
 	log.info("Open Automation website");
-	getBrowser().intialization();	
+//	getBrowser().intialization();	
 }
 @Test
 public void TC001_openHomePage() throws Exception{
 //	test=extent.startTest("TC001_openHomePage");
 	log.info("Open Automation website");
 	getBrowser().intialization();
-	gethomePage().homePage();
+//	gethomePage().homePage();
 //	getScreenShoot().captureScreen(driver, "test");
 }
 @AfterMethod
